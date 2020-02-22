@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../libecs.a  CMakeFiles/ecs.dir/sources/components/Component.cpp.o CMakeFiles/ecs.dir/sources/entities/Entity.cpp.o CMakeFiles/ecs.dir/sources/entities/EntityManager.cpp.o CMakeFiles/ecs.dir/sources/systems/System.cpp.o CMakeFiles/ecs.dir/sources/systems/SystemManager.cpp.o
-/usr/bin/ranlib ../libecs.a
