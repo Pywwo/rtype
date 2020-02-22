@@ -1,0 +1,896 @@
+
+
+
+
+Epitech R-TYPE                                            R. Romain, Ed.
+Internet-Draft                                           C. Charlie, Ed.
+Intended status: Informational                              J. Julo, Ed.
+Expires: June 3, 2020                                      J. Mastu, Ed.
+                                                                 Epitech
+                                                        December 1, 2019
+
+
+                                 R-TYPE
+                               rfc-69420
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on June 3, 2020.
+
+Copyright Notice
+
+   Copyright (c) 2019 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (https://trustee.ietf.org/license-info) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 1]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+     1.1.  What is R-Type? . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Protocol  . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+     2.1.  General . . . . . . . . . . . . . . . . . . . . . . . . .   2
+       2.1.1.  Common commands . . . . . . . . . . . . . . . . . . .   2
+       2.1.2.  Client commands . . . . . . . . . . . . . . . . . . .   3
+     2.2.  Lobby . . . . . . . . . . . . . . . . . . . . . . . . . .   3
+       2.2.1.  Server commands . . . . . . . . . . . . . . . . . . .   3
+       2.2.2.  Client commands . . . . . . . . . . . . . . . . . . .   4
+     2.3.  Game  . . . . . . . . . . . . . . . . . . . . . . . . . .   6
+       2.3.1.  Server commands . . . . . . . . . . . . . . . . . . .   6
+       2.3.2.  Client commands . . . . . . . . . . . . . . . . . . .  10
+     2.4.  Update  . . . . . . . . . . . . . . . . . . . . . . . . .  11
+       2.4.1.  Server commands . . . . . . . . . . . . . . . . . . .  11
+   3.  Figures . . . . . . . . . . . . . . . . . . . . . . . . . . .  12
+     3.1.  Lobby . . . . . . . . . . . . . . . . . . . . . . . . . .  12
+     3.2.  Game  . . . . . . . . . . . . . . . . . . . . . . . . . .  13
+     3.3.  Update  . . . . . . . . . . . . . . . . . . . . . . . . .  15
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  15
+
+1.  Introduction
+
+   This RFC explains how our R-TYPE protocol works.
+
+1.1.  What is R-Type?
+
+   The R-Type is a space shooter game, and we have to make this game
+   again, to learn how works network game development.  We will have to
+   implement a multi-threaded server and a graphical client, using a re-
+   usable game engine.
+
+2.  Protocol
+
+2.1.  General
+
+   +------------+ -> is one byte
+
+2.1.1.  Common commands
+
+   100 - Binary Response
+
+   o  Response: boolean - if success or not
+
+   o  Description: string - describe the answer
+
+
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 2]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                              Binary Response
+
++------------+------------+------------+------------+------------+------------+
+|           100           |  response  |             description             ...
++------------+------------+------------+------------+------------+------------+
+
+                                 Figure 1
+
+2.1.2.  Client commands
+
+   120 - Connect Server
+
+   o  ID: long - client id
+
+   o  Port: int - the client's ip address and port
+
+                              Connect Server
+
++------------+------------+------------+------------+------------+------------+
+|           120           |                    user_id
++------------+------------+------------+------------+------------+------------+
+                                                    |               port
++------------+------------+------------+------------+------------+------------+
+                          |
++------------+------------+
+
+                                 Figure 2
+
+2.2.  Lobby
+
+2.2.1.  Server commands
+
+   210 - Lobby Infos
+
+   Arguments:
+
+   o  Lobby: object - Lobby's data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 3]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                          Lobby Info - Scale 1/2
+
++------------+------------+------------+------------+------------+------------+
+|     210    |
++------------+------------+------------+------------+------------+------------+
+
++------------+------------+------------+------------+------------+------------+
+                                    lobby
++------------+------------+------------+------------+------------+------------+
+                                                                              |
++------------+------------+------------+------------+------------+------------+
+
+
+                                 Figure 3
+
+   -----
+
+   211 - Available Lobbies
+
+   Arguments:
+
+   o  Lobbies: array of objects - Available lobbies data
+
+                             Available Lobbies
+
++------------+------------+------------+------------+------------+------------+
+|           211           |                  number of lobbies                |
++------------+------------+------------+------------+------------+------------+
+                                array of lobbies
++------------+------------+------------+------------+------------+------------+
+
++------------+------------+------------+------------+------------+------------+
+                         ...
+-------------+------------+
+
+
+                                 Figure 4
+
+2.2.2.  Client commands
+
+   220 - Create a lobby
+
+   Arguments:
+
+   o  ID: integer - client id
+
+   Server response:
+
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 4]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+   o  210 - Lobby Infos
+
+                               Create Lobby
+
++------------+------------+------------+------------+------------+------------+
+|           220           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+
+
+
+                                 Figure 5
+
+   -----
+
+   221 - Fetch available lobby
+
+   Arguments:
+
+   o  ID: integer - client id
+
+   Server Response:
+
+   o  211 - Available Lobbies
+
+                           Fetch available lobby
+
++------------+------------+------------+------------+------------+------------+
+|           221           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+
+
+
+                                 Figure 6
+
+   -----
+
+   222 - Connect to a lobby
+
+   Arguments:
+
+   o  ID: integer - client id
+
+   o  ID: integer - lobby id
+
+   Server Response:
+
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 5]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+   o  210 - Lobby Infos
+
+                             Connect to lobby
+
++------------+------------+------------+------------+------------+------------+
+|           222           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+              lobby_id                                                        |
++------------+------------+------------+------------+------------+------------+
+
+
+                                 Figure 7
+
+   -----
+
+   223 - Leave a lobby
+
+   Arguments:
+
+   o  ID: integer - client id
+
+   o  ID: integer - lobby id
+
+                                Leave lobby
+
++------------+------------+------------+------------+------------+------------+
+|           223           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+              lobby_id                                                        |
++------------+------------+------------+------------+------------+------------+
+
+
+                                 Figure 8
+
+2.3.  Game
+
+2.3.1.  Server commands
+
+   310 - Start game
+
+   Arguments:
+
+   o  STATE: object - original state of players(position, etc...)
+
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 6]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                                Start game
+
++------------+------------+------------+------------+------------+------------+
+|           310           |               number of components                |
++------------+------------+------------+------------+------------+------------+
+|                             state of components (see ComponentInfos)
++------------+------------+------------+------------+------------+------------+
+                                                                            ...
++------------+------------+------------+------------+------------+------------+
+
+
+                                 Figure 9
+
+   -----
+
+   311 - Death
+
+   Arguments:
+
+   o  ID: integer - client id
+
+                                   Death
+
++------------+------------+------------+------------+------------+------------+
+|           311           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+
+
+
+                                 Figure 10
+
+   -----
+
+   312 - Bonus
+
+   Arguments:
+
+   o  ID: integer - client id
+
+   o  TYPE: integer - type of bonus
+
+
+
+
+
+
+
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 7]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                                   Bonus
+
++------------+------------+------------+------------+------------+------------+
+|           312           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+              type                                                            |
++------------+------------+------------+------------+------------+------------+
+
+
+                                 Figure 11
+
+   -----
+
+   313 - Spawn Enemy
+
+   Arguments:
+
+   o  ID: integer - enemy id
+
+   o  POSITION: integer, integer - spawning position of the enemy
+
+   o  NAME: string - name of the enemy
+
+                                Spawn Enemy
+
++------------+------------+------------+------------+------------+------------+
+|           313           |                   entity name size                |
++------------+------------+------------+------------+------------+------------+
+|                                 enemy id
++------------+------------+------------+------------+------------+------------+
+                          |                   position.x                      |
++------------+------------+------------+------------+------------+------------+
+                   position.y                       |        entity name     ...
++------------+------------+------------+------------+------------+------------+
+
+
+                                 Figure 12
+
+   -----
+
+   314 - Enemy Death
+
+   Arguments:
+
+   o  ID: integer - enemy id
+
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 8]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                                Enemy Death
+
++------------+------------+------------+------------+------------+------------+
+|           314           |                                         enemy_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+
+
+
+                                 Figure 13
+
+   -----
+
+   315 - End Game
+
+   Arguments:
+
+   o  GAMEINFOS: object - game infos (score, ...)
+
+                                 End game
+
++------------+------------+------------+------------+------------+------------+
+|           315           |                                         game_info
++------------+------------+------------+------------+------------+------------+
+                                                   ...
++------------+------------+------------+------------+
+
+
+                                 Figure 14
+
+   -----
+
+   316 - Delete player
+
+   Arguments:
+
+   o  NAME: string - name of the player
+
+                               Delete player
+
++------------+------------+------------+------------+------------+------------+
+|           316           |                                         player_name
++------------+------------+------------+------------+------------+------------+
+                                                   ...
++------------+------------+------------+------------+
+
+
+                                 Figure 15
+
+
+
+Romain, et al.            Expires June 3, 2020                  [Page 9]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+2.3.2.  Client commands
+
+   320 - Input
+
+   Arguments:
+
+   o  ID: integer - client id
+
+   o  ID: integer - id of the lobby
+
+   o  KEY: integer - [1: TOP, 2: LEFT, 3: RIGHT, 4: BOTTOM, 5: SHOOT]
+
+   o  STATE: integer - [1: PRESSED, 2: RELEASED]
+
+   Server Response:
+
+   o  STATE: object - new state
+
+                                   Input
+
++------------+------------+------------+------------+------------+------------+
+|           320           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+                      lobby_id                                                |
++------------+------------+------------+------------+------------+------------+
+|                        key                        |               state
++------------+------------+------------+------------+------------+------------+
+                          |
++------------+------------+
+
+
+                                 Figure 16
+
+   -----
+
+   321 - Request Start Game
+
+   Arguments:
+
+   o  ID: integer - client id
+
+   o  ID: integer - lobby id
+
+   Server Response:
+
+   o  310 - Start Game
+
+
+
+Romain, et al.            Expires June 3, 2020                 [Page 10]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                            Request Start Game
+
++------------+------------+------------+------------+------------+------------+
+|           321           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+                      lobby_id                                                |
++------------+------------+------------+------------+------------+------------+
+
+
+                                 Figure 17
+
+   -----
+
+   322 - Leave game
+
+   Arguments:
+
+   o  ID: integer - client id
+
+   o  ID: integer - lobby id
+
+   Server Response:
+
+   o  316 - Delete player
+
+                                Leave Game
+
++------------+------------+------------+------------+------------+------------+
+|           322           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+                      lobby_id                                                |
++------------+------------+------------+------------+------------+------------+
+
+
+                                 Figure 18
+
+2.4.  Update
+
+2.4.1.  Server commands
+
+   410 - Update components
+
+   Arguments:
+
+
+
+
+Romain, et al.            Expires June 3, 2020                 [Page 11]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+   o  State: object - new state of updated components
+
+                             Update Components
+
++------------+------------+------------+------------+------------+------------+
+|           410           |                                         state
++------------+------------+------------+------------+------------+------------+
+                                                   ...
++------------+------------+------------+------------+
+
+
+                                 Figure 19
+
+3.  Figures
+
+3.1.  Lobby
+
+                              CREATE A LOBBY
+
++-----------------------+          200          +-----------------------+
+|                       |       (lobby id)      |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          200          |                       |
+|_______________________|      (client id)      |_______________________|
+
+                                 Figure 20
+
+                           FETCH AVAILABLE LOBBY
+
++-----------------------+          201          +-----------------------+
+|                       |     [1, 2, 3, ...]    |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          201          |                       |
+|_______________________|      (client id)      |_______________________|
+
+                                 Figure 21
+
+
+
+
+
+
+
+
+
+
+
+Romain, et al.            Expires June 3, 2020                 [Page 12]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                            CONNECT TO A LOBBY
+
++-----------------------+          100          +-----------------------+
+|                       |    true / connected   |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          202          |                       |
+|_______________________| (client id, lobby id) |_______________________|
+
+                                 Figure 22
+
+                               LEAVE A LOBBY
+
++-----------------------+          100          +-----------------------+
+|                       |    true / connected   |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          203          |                       |
+|_______________________| (client id, lobby id) |_______________________|
+
+                                 Figure 23
+
+3.2.  Game
+
+                                LAUNCH GAME
+
+                                   300
++-----------------------+      (client_id,      +-----------------------+
+|                       |    original state)    |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          300          |                       |
+|_______________________|      (client id)      |_______________________|
+
+                                 Figure 24
+
+
+
+
+
+
+
+
+
+
+
+
+
+Romain, et al.            Expires June 3, 2020                 [Page 13]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                                   INPUT
+
++-----------------------+          301          +-----------------------+
+|                       |       (new state)     |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          301          |                       |
+|_______________________|         (key)         |_______________________|
+
+                                 Figure 25
+
+                                LEAVE GAME
+
++-----------------------+          100          +-----------------------+
+|                       |   (BINARY RESPONSE)   |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          302          |                       |
+|_______________________| (client_id, lobby_id) |_______________________|
+
+                                 Figure 26
+
+                                 STOP GAME
+
++-----------------------+          303          +-----------------------+
+|                       |       (lobby_id)      |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          100          |                       |
+|_______________________|   (BINARY_RESPONSE)   |_______________________|
+
+                                 Figure 27
+
+                                   DEATH
+
++-----------------------+          304          +-----------------------+
+|                       |      (client_id)      |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          100          |                       |
+|_______________________|   (BINARY_RESPONSE)   |_______________________|
+
+                                 Figure 28
+
+
+
+
+Romain, et al.            Expires June 3, 2020                 [Page 14]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+                                   BONUS
+
++-----------------------+          305          +-----------------------+
+|                       |(client_id, bonus type)|                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          100          |                       |
+|_______________________|   (BINARY_RESPONSE)   |_______________________|
+
+                                 Figure 29
+
+3.3.  Update
+
+                                   BONUS
+
+                                   410
++-----------------------+ (client_id, component +-----------------------+
+|                       |    name, new state)   |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          100          |                       |
+|_______________________|   (BINARY_RESPONSE)   |_______________________|
+
+                                 Figure 30
+
+Authors' Addresses
+
+   Romain FOUYER (editor)
+   Epitech
+   Nantes
+   FR
+
+
+   Charlie JEANNEAU (editor)
+   Epitech
+   Nantes
+   FR
+
+
+   Jules BULTEAU (editor)
+   Epitech
+   Nantes
+   FR
+
+
+
+
+
+
+Romain, et al.            Expires June 3, 2020                 [Page 15]
+
+Internet-Draft              Abbreviated Title              December 2019
+
+
+   Antoine CARLIER (editor)
+   Epitech
+   Nantes
+   FR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Romain, et al.            Expires June 3, 2020                 [Page 16]

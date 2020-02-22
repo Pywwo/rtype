@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This template is for creating an Internet Draft using xml2rfc,
+    which is available here: http://xml.resource.org. -->
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+        <!-- One method to get references from the online citation libraries.
+            There has to be one entity for each item to be referenced.
+            An alternate method (rfc include) is described in the references. -->
+
+        <!ENTITY RFC2119 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">
+        <!ENTITY RFC2629 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2629.xml">
+        <!ENTITY RFC3552 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3552.xml">
+        <!ENTITY RFC5226 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5226.xml">
+        ]>
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+<!-- used by XSLT processors -->
+<!-- For a complete list and description of processing instructions (PIs),
+    please see http://xml.resource.org/authoring/README.html. -->
+<!-- Below are generally applicable Processing Instructions (PIs) that most I-Ds might want to use.
+    (Here they are set differently than their defaults in xml2rfc v1.32) -->
+<?rfc strict="yes" ?>
+<!-- give errors regarding ID-nits and DTD validation -->
+<!-- control the table of contents (ToC) -->
+<?rfc toc="yes"?>
+<!-- generate a ToC -->
+<?rfc tocdepth="4"?>
+<!-- the number of levels of subsections in ToC. default: 3 -->
+<!-- control references -->
+<?rfc symrefs="yes"?>
+<!-- use symbolic references tags, i.e, [RFC2119] instead of [1] -->
+<?rfc sortrefs="yes" ?>
+<!-- sort the reference entries alphabetically -->
+<!-- control vertical white space
+    (using these PIs as follows is recommended by the RFC Editor) -->
+<?rfc compact="yes" ?>
+<!-- do not start each main section on a new page -->
+<?rfc subcompact="no" ?>
+<!-- keep one blank line between list items -->
+<!-- end of list of popular I-D processing instructions -->
+<rfc category="info" docName="rfc-69420" ipr="trust200902">
+    <!-- category values: std, bcp, info, exp, and historic
+       ipr values: trust200902, noModificationTrust200902, noDerivativesTrust200902,
+          or pre5378Trust200902
+       you can add the attributes updates="NNNN" and obsoletes="NNNN"
+       they will automatically be output with "(if approved)" -->
+
+    <!-- ***** FRONT MATTER ***** -->
+
+    <front>
+        <!-- The abbreviated title is used in the page header - it is only necessary if the
+             full title is longer than 39 characters -->
+
+        <title abbrev="Abbreviated Title">R-TYPE</title>
+
+        <!-- add 'role="editor"' below for the editors if appropriate -->
+
+        <!-- Another author who claims to be an editor -->
+
+        <author fullname="Romain FOUYER" initials="R.F." role="editor"
+                surname="Romain">
+            <organization>Epitech</organization>
+
+            <address>
+                <postal>
+                    <street></street>
+
+                    <!-- Reorder these if your country does things differently -->
+
+                    <city>Nantes</city>
+
+                    <region></region>
+
+                    <code></code>
+
+                    <country>FR</country>
+                </postal>
+            </address>
+        </author>
+        <author fullname="Charlie JEANNEAU" initials="C.J." role="editor"
+                surname="Charlie">
+            <organization>Epitech</organization>
+
+            <address>
+                <postal>
+                    <street></street>
+
+                    <!-- Reorder these if your country does things differently -->
+
+                    <city>Nantes</city>
+
+                    <region></region>
+
+                    <code></code>
+
+                    <country>FR</country>
+                </postal>
+            </address>
+        </author>
+        <author fullname="Jules BULTEAU" initials="J.B." role="editor"
+                surname="Julo">
+            <organization>Epitech</organization>
+
+            <address>
+                <postal>
+                    <street></street>
+
+                    <!-- Reorder these if your country does things differently -->
+
+                    <city>Nantes</city>
+
+                    <region></region>
+
+                    <code></code>
+
+                    <country>FR</country>
+                </postal>
+            </address>
+        </author>
+        <author fullname="Antoine CARLIER" initials="J.B." role="editor"
+                surname="Mastu">
+            <organization>Epitech</organization>
+
+            <address>
+                <postal>
+                    <street></street>
+
+                    <!-- Reorder these if your country does things differently -->
+
+                    <city>Nantes</city>
+
+                    <region></region>
+
+                    <code></code>
+
+                    <country>FR</country>
+                </postal>
+            </address>
+        </author>
+        <date year="2019" />
+
+        <!-- If the month and year are both specified and are the current ones, xml2rfc will fill
+             in the current day for you. If only the current year is specified, xml2rfc will fill
+          in the current day and month for you. If the year is not the current one, it is
+          necessary to specify at least a month (xml2rfc assumes day="1" if not specified for the
+          purpose of calculating the expiry date).  With drafts it is normally sufficient to
+          specify just the year. -->
+
+        <!-- Meta-data Declarations -->
+
+        <area>General</area>
+
+        <workgroup>Epitech R-TYPE</workgroup>
+
+        <!-- WG name at the upperleft corner of the doc,
+             IETF is fine for individual submissions.
+          If this element is not present, the default is "Network Working Group",
+             which is used by the RFC Editor as a nod to the history of the IETF. -->
+
+        <keyword>template</keyword>
+
+        <!-- Keywords will be incorporated into HTML output
+             files in a meta tag but they have no effect on text or nroff
+             output. If you submit your draft to the RFC Editor, the
+             keywords will be used for the search engine. -->
+
+    </front>
+
+    <middle>
+        <section title="Introduction">
+            <t>This RFC explains how our R-TYPE protocol works.</t>
+
+            <section title="What is R-Type?">
+                <t>The R-Type is a space shooter game, and we have to make this game again, to learn how works network
+                game development. We will have to implement a multi-threaded server and a graphical client, using
+                a re-usable game engine.</t>
+            </section>
+        </section>
+
+        <section title="Protocol">
+            <section title="General">
+                <t>+------------+ -> is one byte</t>
+                <section title="Common commands">
+                    <t>100 - Binary Response</t>
+                    <t><list style="symbols">
+                        <t>Response: boolean - if success or not</t>
+                        <t>Description: string - describe the answer</t>
+                    </list></t>
+                    <figure align="center" anchor="binary_response_figure_packet">
+                        <preamble>Binary Response</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           100           |  response  |             description             ...
++------------+------------+------------+------------+------------+------------+
+           ]]></artwork>
+                    </figure>
+                </section>
+                <section title="Client commands">
+                    <t>120 - Connect Server</t>
+                    <t><list style="symbols">
+                        <t>ID: long - client id</t>
+                        <t>Port: int - the client's ip address and port</t>
+                    </list></t>
+                    <figure align="center" anchor="connect_server_figure_packet">
+                        <preamble>Connect Server</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           120           |                    user_id
++------------+------------+------------+------------+------------+------------+
+                                                    |               port
++------------+------------+------------+------------+------------+------------+
+                          |
++------------+------------+
+           ]]></artwork>
+                    </figure>
+                </section>
+            </section>
+            <section title="Lobby">
+                <section title="Server commands">
+                    <t>210 - Lobby Infos</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>Lobby: object - Lobby's data</t>
+                    </list></t>
+                    <figure align="center" anchor="lobby_info_figure_packet">
+                        <preamble>Lobby Info - Scale 1/2</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|     210    |
++------------+------------+------------+------------+------------+------------+
+
++------------+------------+------------+------------+------------+------------+
+                                    lobby
++------------+------------+------------+------------+------------+------------+
+                                                                              |
++------------+------------+------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>211 - Available Lobbies</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>Lobbies: array of objects - Available lobbies data</t>
+                    </list></t>
+                    <figure align="center" anchor="available_lobbies_figure_packet">
+                        <preamble>Available Lobbies</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           211           |                  number of lobbies                |
++------------+------------+------------+------------+------------+------------+
+                                array of lobbies
++------------+------------+------------+------------+------------+------------+
+
++------------+------------+------------+------------+------------+------------+
+                         ...
+-------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                </section>
+                <section title="Client commands">
+                    <t>220 - Create a lobby</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                    </list></t>
+                    <t>Server response:</t>
+                    <t><list style="symbols">
+                        <t>210 - Lobby Infos</t>
+                    </list></t>
+                    <figure align="center" anchor="create_lobby_figure_packet">
+                        <preamble>Create Lobby</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           220           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>221 - Fetch available lobby</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                    </list></t>
+                    <t>Server Response:</t>
+                    <t><list style="symbols">
+                        <t>211 - Available Lobbies</t>
+                    </list></t>
+                    <figure align="center" anchor="fetch_lobbies_figure_packet">
+                        <preamble>Fetch available lobby</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           221           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>222 - Connect to a lobby</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                        <t>ID: integer - lobby id</t>
+                    </list></t>
+                    <t>Server Response:</t>
+                    <t><list style="symbols">
+                        <t>210 - Lobby Infos</t>
+                    </list></t>
+                    <figure align="center" anchor="connect_lobby_figure_packet">
+                        <preamble>Connect to lobby</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           222           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+              lobby_id                                                        |
++------------+------------+------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>223 - Leave a lobby</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                        <t>ID: integer - lobby id</t>
+                    </list></t>
+                    <figure align="center" anchor="leave_lobby_figure_packet">
+                        <preamble>Leave lobby</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           223           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+              lobby_id                                                        |
++------------+------------+------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                </section>
+            </section>
+            <section title="Game">
+                <section title="Server commands">
+                    <t>310 - Start game</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>STATE: object - original state of players(position, etc...)</t>
+                    </list></t>
+                    <figure align="center" anchor="start_game_figure_packet">
+                        <preamble>Start game</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           310           |               number of components                |
++------------+------------+------------+------------+------------+------------+
+|                             state of components (see ComponentInfos)
++------------+------------+------------+------------+------------+------------+
+                                                                            ...
++------------+------------+------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>311 - Death</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                    </list></t>
+                    <figure align="center" anchor="death_figure_packet">
+                        <preamble>Death</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           311           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>312 - Bonus</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                        <t>TYPE: integer - type of bonus</t>
+                    </list></t>
+                    <figure align="center" anchor="bonus_figure_packet">
+                        <preamble>Bonus</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           312           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+              type                                                            |
++------------+------------+------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>313 - Spawn Enemy</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - enemy id</t>
+                        <t>POSITION: integer, integer - spawning position of the enemy</t>
+                        <t>NAME: string - name of the enemy</t>
+                    </list></t>
+                    <figure align="center" anchor="spawn_enemy_figure_packet">
+                        <preamble>Spawn Enemy</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           313           |                   entity name size                |
++------------+------------+------------+------------+------------+------------+
+|                                 enemy id
++------------+------------+------------+------------+------------+------------+
+                          |                   position.x                      |
++------------+------------+------------+------------+------------+------------+
+                   position.y                       |        entity name     ...
++------------+------------+------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>314 - Enemy Death</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - enemy id</t>
+                    </list></t>
+                    <figure align="center" anchor="enemy_death_figure_packet">
+                        <preamble>Enemy Death</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           314           |                                         enemy_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>315 - End Game</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>GAMEINFOS: object - game infos (score, ...)</t>
+                    </list></t>
+                    <figure align="center" anchor="end_game_figure_packet">
+                        <preamble>End game</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           315           |                                         game_info
++------------+------------+------------+------------+------------+------------+
+                                                   ...
++------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>316 - Delete player</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>NAME: string - name of the player</t>
+                    </list></t>
+                    <figure align="center" anchor="delete_player_figure_packet">
+                        <preamble>Delete player</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           316           |                                         player_name
++------------+------------+------------+------------+------------+------------+
+                                                   ...
++------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                </section>
+                <section title="Client commands">
+                    <t>320 - Input</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                        <t>ID: integer - id of the lobby</t>
+                        <t>KEY: integer - [1: TOP, 2: LEFT, 3: RIGHT, 4: BOTTOM, 5: SHOOT]</t>
+                        <t>STATE: integer - [1: PRESSED, 2: RELEASED]</t>
+                    </list></t>
+                    <t>Server Response:</t>
+                    <t><list style="symbols">
+                        <t>STATE: object - new state</t>
+                    </list></t>
+                    <figure align="center" anchor="input_figure_packet">
+                        <preamble>Input</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           320           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+                      lobby_id                                                |
++------------+------------+------------+------------+------------+------------+
+|                        key                        |               state
++------------+------------+------------+------------+------------+------------+
+                          |
++------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>321 - Request Start Game</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                        <t>ID: integer - lobby id</t>
+                    </list></t>
+                    <t>Server Response:</t>
+                    <t><list style="symbols">
+                        <t>310 - Start Game</t>
+                    </list></t>
+                    <figure align="center" anchor="request_start_game_figure_packet">
+                        <preamble>Request Start Game</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           321           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+                      lobby_id                                                |
++------------+------------+------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                    <t>-----</t>
+                    <t>322 - Leave game</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>ID: integer - client id</t>
+                        <t>ID: integer - lobby id</t>
+                    </list></t>
+                    <t>Server Response:</t>
+                    <t><list style="symbols">
+                        <t>316 - Delete player</t>
+                    </list></t>
+                    <figure align="center" anchor="leave_game_figure_packet">
+                        <preamble>Leave Game</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           322           |                                         client_id
++------------+------------+------------+------------+------------+------------+
+                                                    |
++------------+------------+------------+------------+------------+------------+
+                      lobby_id                                                |
++------------+------------+------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                </section>
+            </section>
+            <section title="Update">
+                <section title="Server commands">
+                    <t>410 - Update components</t>
+                    <t>Arguments:</t>
+                    <t><list style="symbols">
+                        <t>State: object - new state of updated components</t>
+                    </list></t>
+                    <figure align="center" anchor="update_components_figure_packet">
+                        <preamble>Update Components</preamble>
+
+                        <artwork align="left"><![CDATA[
++------------+------------+------------+------------+------------+------------+
+|           410           |                                         state
++------------+------------+------------+------------+------------+------------+
+                                                   ...
++------------+------------+------------+------------+
+
+           ]]></artwork>
+                    </figure>
+                </section>
+            </section>
+        </section>
+
+        <section title="Figures">
+            <section title="Lobby">
+                <figure align="center" anchor="create_lobby">
+                    <preamble>CREATE A LOBBY</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          200          +-----------------------+
+|                       |       (lobby id)      |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          200          |                       |
+|_______________________|      (client id)      |_______________________|
+           ]]></artwork>
+                </figure>
+
+                <figure align="center" anchor="fetch_lobby">
+                    <preamble>FETCH AVAILABLE LOBBY</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          201          +-----------------------+
+|                       |     [1, 2, 3, ...]    |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          201          |                       |
+|_______________________|      (client id)      |_______________________|
+            ]]></artwork>
+                </figure>
+
+                <figure align="center" anchor="connect_lobby">
+                    <preamble>CONNECT TO A LOBBY</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          100          +-----------------------+
+|                       |    true / connected   |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          202          |                       |
+|_______________________| (client id, lobby id) |_______________________|
+            ]]></artwork>
+                </figure>
+
+                <figure align="center" anchor="leave_lobby">
+                    <preamble>LEAVE A LOBBY</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          100          +-----------------------+
+|                       |    true / connected   |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          203          |                       |
+|_______________________| (client id, lobby id) |_______________________|
+            ]]></artwork>
+                </figure>
+            </section>
+
+            <section title="Game">
+                <figure align="center" anchor="launch_game">
+                    <preamble>LAUNCH GAME</preamble>
+
+                    <artwork align="left"><![CDATA[
+                                   300
++-----------------------+      (client_id,      +-----------------------+
+|                       |    original state)    |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          300          |                       |
+|_______________________|      (client id)      |_______________________|
+           ]]></artwork>
+                </figure>
+                <figure align="center" anchor="input_game">
+                    <preamble>INPUT</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          301          +-----------------------+
+|                       |       (new state)     |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          301          |                       |
+|_______________________|         (key)         |_______________________|
+           ]]></artwork>
+                </figure>
+                <figure align="center" anchor="leave_game">
+                    <preamble>LEAVE GAME</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          100          +-----------------------+
+|                       |   (BINARY RESPONSE)   |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          302          |                       |
+|_______________________| (client_id, lobby_id) |_______________________|
+           ]]></artwork>
+                </figure>
+                <figure align="center" anchor="stop_game">
+                    <preamble>STOP GAME</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          303          +-----------------------+
+|                       |       (lobby_id)      |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          100          |                       |
+|_______________________|   (BINARY_RESPONSE)   |_______________________|
+           ]]></artwork>
+                </figure>
+                <figure align="center" anchor="death">
+                    <preamble>DEATH</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          304          +-----------------------+
+|                       |      (client_id)      |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          100          |                       |
+|_______________________|   (BINARY_RESPONSE)   |_______________________|
+           ]]></artwork>
+                </figure>
+                <figure align="center" anchor="bonus">
+                    <preamble>BONUS</preamble>
+
+                    <artwork align="left"><![CDATA[
++-----------------------+          305          +-----------------------+
+|                       |(client_id, bonus type)|                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          100          |                       |
+|_______________________|   (BINARY_RESPONSE)   |_______________________|
+           ]]></artwork>
+                </figure>
+            </section>
+            <section title="Update">
+                <figure align="center" anchor="update_component">
+                    <preamble>BONUS</preamble>
+
+                    <artwork align="left"><![CDATA[
+                                   410
++-----------------------+ (client_id, component +-----------------------+
+|                       |    name, new state)   |                       |
+|                       |---------------------->|                       |
+|        SERVER         |                       |        CLIENT         |
+|                       |<----------------------|                       |
+|                       |          100          |                       |
+|_______________________|   (BINARY_RESPONSE)   |_______________________|
+           ]]></artwork>
+                </figure>
+            </section>
+        </section>
+    </middle>
+
+    <!--  *****BACK MATTER ***** -->
+
+    <back>
+
+    </back>
+</rfc>

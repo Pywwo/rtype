@@ -1,0 +1,11 @@
+{
+  "name": "Tests",
+  "components": [
+    {
+      "name": "Sprite",
+      "arguments": {
+          "texture": "../../assets/birb.jpg"
+      }
+    }
+  ]
+}

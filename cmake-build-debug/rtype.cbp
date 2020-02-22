@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rtype"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\ecs\;CMake Files\cmake-build-debug\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="r-type_tests">
+				<Option output="/home/Pywwo/rtype/cmake-build-debug/bin/r-type_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Pywwo/.conan/data/sfml/2.5.1/bincrafters/stable/package/a35d758ea6de66bbc1be4a40251fcca6cda21aa0/include"/>
+					<Add directory="/home/Pywwo/.conan/data/boost/1.71.0/conan/stable/package/f419497daccab81a781a793e5fffd7f228cf234e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include/freetype2"/>
+					<Add directory="/home/Pywwo/.conan/data/stb/20180214/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include/AL"/>
+					<Add directory="/home/Pywwo/.conan/data/flac/1.3.2/bincrafters/stable/package/6f925861b8452442b91da6c8e1df92b6b878b79c/include"/>
+					<Add directory="/home/Pywwo/.conan/data/vorbis/1.3.6/bincrafters/stable/package/08be371161ce02373155daf22f8fa5959548a7d1/include"/>
+					<Add directory="/home/Pywwo/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libpng/1.6.34/bincrafters/stable/package/4f75e4b120320a9fb6ac0012242d9ac95d18b6f6/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libalsa/1.1.5/conan/stable/package/7cf43daaf95399d6202b2fd6fab7eab428e8d639/include"/>
+					<Add directory="/home/Pywwo/.conan/data/ogg/1.3.3/bincrafters/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/rtype/commons"/>
+					<Add directory="/home/Pywwo/rtype/commons/dl"/>
+					<Add directory="/home/Pywwo/rtype/commons/exception"/>
+					<Add directory="/home/Pywwo/rtype/commons/network"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/udpsocket"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/datagram"/>
+					<Add directory="/home/Pywwo/rtype/commons/other"/>
+					<Add directory="/home/Pywwo/rtype/client/include"/>
+					<Add directory="/home/Pywwo/rtype/client/include/systems"/>
+					<Add directory="/home/Pywwo/rtype/client/include/components"/>
+					<Add directory="/home/Pywwo/rtype/lib/ecs/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 r-type_tests"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="r-type_tests/fast">
+				<Option output="/home/Pywwo/rtype/cmake-build-debug/bin/r-type_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Pywwo/.conan/data/sfml/2.5.1/bincrafters/stable/package/a35d758ea6de66bbc1be4a40251fcca6cda21aa0/include"/>
+					<Add directory="/home/Pywwo/.conan/data/boost/1.71.0/conan/stable/package/f419497daccab81a781a793e5fffd7f228cf234e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include/freetype2"/>
+					<Add directory="/home/Pywwo/.conan/data/stb/20180214/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include/AL"/>
+					<Add directory="/home/Pywwo/.conan/data/flac/1.3.2/bincrafters/stable/package/6f925861b8452442b91da6c8e1df92b6b878b79c/include"/>
+					<Add directory="/home/Pywwo/.conan/data/vorbis/1.3.6/bincrafters/stable/package/08be371161ce02373155daf22f8fa5959548a7d1/include"/>
+					<Add directory="/home/Pywwo/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libpng/1.6.34/bincrafters/stable/package/4f75e4b120320a9fb6ac0012242d9ac95d18b6f6/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libalsa/1.1.5/conan/stable/package/7cf43daaf95399d6202b2fd6fab7eab428e8d639/include"/>
+					<Add directory="/home/Pywwo/.conan/data/ogg/1.3.3/bincrafters/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/rtype/commons"/>
+					<Add directory="/home/Pywwo/rtype/commons/dl"/>
+					<Add directory="/home/Pywwo/rtype/commons/exception"/>
+					<Add directory="/home/Pywwo/rtype/commons/network"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/udpsocket"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/datagram"/>
+					<Add directory="/home/Pywwo/rtype/commons/other"/>
+					<Add directory="/home/Pywwo/rtype/client/include"/>
+					<Add directory="/home/Pywwo/rtype/client/include/systems"/>
+					<Add directory="/home/Pywwo/rtype/client/include/components"/>
+					<Add directory="/home/Pywwo/rtype/lib/ecs/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 r-type_tests/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="r-type_client">
+				<Option output="/home/Pywwo/rtype/cmake-build-debug/bin/r-type_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Pywwo/.conan/data/sfml/2.5.1/bincrafters/stable/package/a35d758ea6de66bbc1be4a40251fcca6cda21aa0/include"/>
+					<Add directory="/home/Pywwo/.conan/data/boost/1.71.0/conan/stable/package/f419497daccab81a781a793e5fffd7f228cf234e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include/freetype2"/>
+					<Add directory="/home/Pywwo/.conan/data/stb/20180214/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include/AL"/>
+					<Add directory="/home/Pywwo/.conan/data/flac/1.3.2/bincrafters/stable/package/6f925861b8452442b91da6c8e1df92b6b878b79c/include"/>
+					<Add directory="/home/Pywwo/.conan/data/vorbis/1.3.6/bincrafters/stable/package/08be371161ce02373155daf22f8fa5959548a7d1/include"/>
+					<Add directory="/home/Pywwo/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libpng/1.6.34/bincrafters/stable/package/4f75e4b120320a9fb6ac0012242d9ac95d18b6f6/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libalsa/1.1.5/conan/stable/package/7cf43daaf95399d6202b2fd6fab7eab428e8d639/include"/>
+					<Add directory="/home/Pywwo/.conan/data/ogg/1.3.3/bincrafters/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/rtype/commons"/>
+					<Add directory="/home/Pywwo/rtype/commons/dl"/>
+					<Add directory="/home/Pywwo/rtype/commons/exception"/>
+					<Add directory="/home/Pywwo/rtype/commons/network"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/udpsocket"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/datagram"/>
+					<Add directory="/home/Pywwo/rtype/commons/other"/>
+					<Add directory="/home/Pywwo/rtype/client/include"/>
+					<Add directory="/home/Pywwo/rtype/client/include/systems"/>
+					<Add directory="/home/Pywwo/rtype/client/include/components"/>
+					<Add directory="/home/Pywwo/rtype/lib/ecs/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 r-type_client"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="r-type_client/fast">
+				<Option output="/home/Pywwo/rtype/cmake-build-debug/bin/r-type_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Pywwo/.conan/data/sfml/2.5.1/bincrafters/stable/package/a35d758ea6de66bbc1be4a40251fcca6cda21aa0/include"/>
+					<Add directory="/home/Pywwo/.conan/data/boost/1.71.0/conan/stable/package/f419497daccab81a781a793e5fffd7f228cf234e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include/freetype2"/>
+					<Add directory="/home/Pywwo/.conan/data/stb/20180214/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include/AL"/>
+					<Add directory="/home/Pywwo/.conan/data/flac/1.3.2/bincrafters/stable/package/6f925861b8452442b91da6c8e1df92b6b878b79c/include"/>
+					<Add directory="/home/Pywwo/.conan/data/vorbis/1.3.6/bincrafters/stable/package/08be371161ce02373155daf22f8fa5959548a7d1/include"/>
+					<Add directory="/home/Pywwo/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libpng/1.6.34/bincrafters/stable/package/4f75e4b120320a9fb6ac0012242d9ac95d18b6f6/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libalsa/1.1.5/conan/stable/package/7cf43daaf95399d6202b2fd6fab7eab428e8d639/include"/>
+					<Add directory="/home/Pywwo/.conan/data/ogg/1.3.3/bincrafters/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/rtype/commons"/>
+					<Add directory="/home/Pywwo/rtype/commons/dl"/>
+					<Add directory="/home/Pywwo/rtype/commons/exception"/>
+					<Add directory="/home/Pywwo/rtype/commons/network"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/udpsocket"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/datagram"/>
+					<Add directory="/home/Pywwo/rtype/commons/other"/>
+					<Add directory="/home/Pywwo/rtype/client/include"/>
+					<Add directory="/home/Pywwo/rtype/client/include/systems"/>
+					<Add directory="/home/Pywwo/rtype/client/include/components"/>
+					<Add directory="/home/Pywwo/rtype/lib/ecs/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 r-type_client/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="r-type_server">
+				<Option output="/home/Pywwo/rtype/cmake-build-debug/bin/r-type_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Pywwo/.conan/data/sfml/2.5.1/bincrafters/stable/package/a35d758ea6de66bbc1be4a40251fcca6cda21aa0/include"/>
+					<Add directory="/home/Pywwo/.conan/data/boost/1.71.0/conan/stable/package/f419497daccab81a781a793e5fffd7f228cf234e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include/freetype2"/>
+					<Add directory="/home/Pywwo/.conan/data/stb/20180214/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include/AL"/>
+					<Add directory="/home/Pywwo/.conan/data/flac/1.3.2/bincrafters/stable/package/6f925861b8452442b91da6c8e1df92b6b878b79c/include"/>
+					<Add directory="/home/Pywwo/.conan/data/vorbis/1.3.6/bincrafters/stable/package/08be371161ce02373155daf22f8fa5959548a7d1/include"/>
+					<Add directory="/home/Pywwo/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libpng/1.6.34/bincrafters/stable/package/4f75e4b120320a9fb6ac0012242d9ac95d18b6f6/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libalsa/1.1.5/conan/stable/package/7cf43daaf95399d6202b2fd6fab7eab428e8d639/include"/>
+					<Add directory="/home/Pywwo/.conan/data/ogg/1.3.3/bincrafters/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/rtype/commons"/>
+					<Add directory="/home/Pywwo/rtype/commons/exception"/>
+					<Add directory="/home/Pywwo/rtype/server/sources"/>
+					<Add directory="/home/Pywwo/rtype/server/components"/>
+					<Add directory="/home/Pywwo/rtype/server/include"/>
+					<Add directory="/home/Pywwo/rtype/server/interface"/>
+					<Add directory="/home/Pywwo/rtype/commons/network"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/udpsocket"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/datagram"/>
+					<Add directory="/home/Pywwo/rtype/lib/ecs/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 r-type_server"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="r-type_server/fast">
+				<Option output="/home/Pywwo/rtype/cmake-build-debug/bin/r-type_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Pywwo/.conan/data/sfml/2.5.1/bincrafters/stable/package/a35d758ea6de66bbc1be4a40251fcca6cda21aa0/include"/>
+					<Add directory="/home/Pywwo/.conan/data/boost/1.71.0/conan/stable/package/f419497daccab81a781a793e5fffd7f228cf234e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include/freetype2"/>
+					<Add directory="/home/Pywwo/.conan/data/stb/20180214/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include/AL"/>
+					<Add directory="/home/Pywwo/.conan/data/flac/1.3.2/bincrafters/stable/package/6f925861b8452442b91da6c8e1df92b6b878b79c/include"/>
+					<Add directory="/home/Pywwo/.conan/data/vorbis/1.3.6/bincrafters/stable/package/08be371161ce02373155daf22f8fa5959548a7d1/include"/>
+					<Add directory="/home/Pywwo/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libpng/1.6.34/bincrafters/stable/package/4f75e4b120320a9fb6ac0012242d9ac95d18b6f6/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libalsa/1.1.5/conan/stable/package/7cf43daaf95399d6202b2fd6fab7eab428e8d639/include"/>
+					<Add directory="/home/Pywwo/.conan/data/ogg/1.3.3/bincrafters/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/rtype/commons"/>
+					<Add directory="/home/Pywwo/rtype/commons/exception"/>
+					<Add directory="/home/Pywwo/rtype/server/sources"/>
+					<Add directory="/home/Pywwo/rtype/server/components"/>
+					<Add directory="/home/Pywwo/rtype/server/include"/>
+					<Add directory="/home/Pywwo/rtype/server/interface"/>
+					<Add directory="/home/Pywwo/rtype/commons/network"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/udpsocket"/>
+					<Add directory="/home/Pywwo/rtype/commons/network/datagram"/>
+					<Add directory="/home/Pywwo/rtype/lib/ecs/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 r-type_server/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ecs">
+				<Option output="/home/Pywwo/rtype/cmake-build-debug/lib/libecs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug/lib/ecs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Pywwo/.conan/data/sfml/2.5.1/bincrafters/stable/package/a35d758ea6de66bbc1be4a40251fcca6cda21aa0/include"/>
+					<Add directory="/home/Pywwo/.conan/data/boost/1.71.0/conan/stable/package/f419497daccab81a781a793e5fffd7f228cf234e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include/freetype2"/>
+					<Add directory="/home/Pywwo/.conan/data/stb/20180214/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include/AL"/>
+					<Add directory="/home/Pywwo/.conan/data/flac/1.3.2/bincrafters/stable/package/6f925861b8452442b91da6c8e1df92b6b878b79c/include"/>
+					<Add directory="/home/Pywwo/.conan/data/vorbis/1.3.6/bincrafters/stable/package/08be371161ce02373155daf22f8fa5959548a7d1/include"/>
+					<Add directory="/home/Pywwo/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libpng/1.6.34/bincrafters/stable/package/4f75e4b120320a9fb6ac0012242d9ac95d18b6f6/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libalsa/1.1.5/conan/stable/package/7cf43daaf95399d6202b2fd6fab7eab428e8d639/include"/>
+					<Add directory="/home/Pywwo/.conan/data/ogg/1.3.3/bincrafters/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/rtype/lib/ecs/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/lib/ecs/Makefile&quot;  VERBOSE=1 ecs"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/lib/ecs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/lib/ecs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/lib/ecs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ecs/fast">
+				<Option output="/home/Pywwo/rtype/cmake-build-debug/lib/libecs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/Pywwo/rtype/cmake-build-debug/lib/ecs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/Pywwo/.conan/data/sfml/2.5.1/bincrafters/stable/package/a35d758ea6de66bbc1be4a40251fcca6cda21aa0/include"/>
+					<Add directory="/home/Pywwo/.conan/data/boost/1.71.0/conan/stable/package/f419497daccab81a781a793e5fffd7f228cf234e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include"/>
+					<Add directory="/home/Pywwo/.conan/data/freetype/2.9.0/bincrafters/stable/package/876d4331adf573973aca1cbdf6614fdd41b8c51e/include/freetype2"/>
+					<Add directory="/home/Pywwo/.conan/data/stb/20180214/conan/stable/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include"/>
+					<Add directory="/home/Pywwo/.conan/data/openal/1.19.0/bincrafters/stable/package/c11116884528df1ba975497cfb51ec76618e3577/include/AL"/>
+					<Add directory="/home/Pywwo/.conan/data/flac/1.3.2/bincrafters/stable/package/6f925861b8452442b91da6c8e1df92b6b878b79c/include"/>
+					<Add directory="/home/Pywwo/.conan/data/vorbis/1.3.6/bincrafters/stable/package/08be371161ce02373155daf22f8fa5959548a7d1/include"/>
+					<Add directory="/home/Pywwo/.conan/data/bzip2/1.0.8/conan/stable/package/a5875aed3fc7ae8dd0488f7e5e99acbc480d721d/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libpng/1.6.34/bincrafters/stable/package/4f75e4b120320a9fb6ac0012242d9ac95d18b6f6/include"/>
+					<Add directory="/home/Pywwo/.conan/data/libalsa/1.1.5/conan/stable/package/7cf43daaf95399d6202b2fd6fab7eab428e8d639/include"/>
+					<Add directory="/home/Pywwo/.conan/data/ogg/1.3.3/bincrafters/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/.conan/data/zlib/1.2.11/conan/stable/package/1d877a3df840030e6a8abb74c5ffb9088d08b47a/include"/>
+					<Add directory="/home/Pywwo/rtype/lib/ecs/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/lib/ecs/Makefile&quot;  VERBOSE=1 ecs/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/lib/ecs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/lib/ecs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/Pywwo/rtype/cmake-build-debug/lib/ecs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Animator.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Button.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Camera.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Effect.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Event.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Input.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/OpacityChanger.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Parallax.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Rectangle.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Score.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Sound.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Sprite.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/components/Text.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/systems/AnimationSystem.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/systems/LifeSystem.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/systems/MovementSystem.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/systems/NetworkSystem.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/systems/SFMLSystem.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/systems/ScoreSystem.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/systems/SoundSystem.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/systems/TimerSystem.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/utilities/AssetsManager.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/utilities/EntityLoader.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/utilities/GameSettings.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/utilities/GameWrapper.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/worlds/GameWorld.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/worlds/InLobbyWorld.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/worlds/LobbyListWorld.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/worlds/MenuWorld.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/worlds/SettingsWorld.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/worlds/World.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/include/worlds/WorldManager.hpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Animator.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Button.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Camera.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Effect.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Event.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Input.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/OpacityChanger.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Parallax.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Rectangle.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Score.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Sound.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Sprite.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/components/Text.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/main.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/systems/AnimationSystem.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/systems/LifeSystem.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/systems/MovementSystem.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/systems/NetworkSystem.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/systems/SFMLSystem.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/systems/ScoreSystem.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/systems/SoundSystem.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/systems/TimerSystem.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/utilities/AssetsManager.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/utilities/EntityLoader.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/utilities/GameSettings.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/utilities/GameWrapper.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/worlds/GameWorld.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/worlds/InLobbyWorld.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/worlds/LobbyListWorld.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/worlds/MenuWorld.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/worlds/SettingsWorld.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/worlds/World.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/client/sources/worlds/WorldManager.cpp">
+			<Option target="r-type_client"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/components/Controller.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/components/Controller.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/components/Status.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/components/Status.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/components/Timer.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/components/Timer.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/components/Transform.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/components/Transform.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/dl/DLLoader.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/dl/DLLoader.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/exception/RtypeException.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/HostInfos.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/AvailableLobbiesDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/AvailableLobbiesDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/BinaryDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/BinaryDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/ConnectLobbyDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/ConnectLobbyDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/ConnectServerDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/ConnectServerDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/CreateLobbyDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/CreateLobbyDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/Datagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/Datagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/DeletePlayerDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/DeletePlayerDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/EndGameDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/EndGameDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/EnemyDeathDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/EnemyDeathDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/FetchLobbiesDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/FetchLobbiesDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/InputDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/InputDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/LeaveGameDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/LeaveGameDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/LeaveLobbyDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/LeaveLobbyDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/LobbyInfosDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/LobbyInfosDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/PlayerDeathDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/PlayerDeathDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/RequestStartGameDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/RequestStartGameDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/RtypeDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/RtypeDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/SpawnEnemyDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/SpawnEnemyDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/StartGameDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/StartGameDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/TriggerBonusDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/TriggerBonusDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/UpdateComponentsDatagram.cpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/network/datagram/UpdateComponentsDatagram.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/other/BonusType.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/other/ComponentInfos.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/other/EndGameInfos.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/other/EnemyId.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/other/GameKeys.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/other/Lobby.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/other/Player.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/commons/types/Vector.hpp">
+			<Option target="r-type_tests"/>
+			<Option target="r-type_client"/>
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/include/components/Component.hpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/include/components/IComponent.hpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/include/entities/Entity.hpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/include/entities/EntityManager.hpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/include/entities/IEntity.hpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/include/systems/ISystem.hpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/include/systems/System.hpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/include/systems/SystemManager.hpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/sources/components/Component.cpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/sources/entities/Entity.cpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/sources/entities/EntityManager.cpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/sources/systems/System.cpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/sources/systems/SystemManager.cpp">
+			<Option target="ecs"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/Game.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/GameManager.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/NetworkManager.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/RtypeServer.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/ThreadSafeQueue.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/UdpSocket.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/components/BoxCollider.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/components/Camera.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/components/Damager.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/components/Monster.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/components/Shoot.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/systems/CameraSystem.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/systems/CollisionSystem.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/systems/DumbSystem.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/systems/LifeSystem.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/systems/MonsterSystem.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/systems/MovementSystem.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/include/systems/TimerSystem.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/interface/INetworkManager.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/interface/IUdpSocket.hpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/Game.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/GameManager.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/NetworkManager.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/RtypeServer.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/ThreadSafeQueue.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/UdpSocket.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/components/BoxCollider.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/components/Camera.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/components/Damager.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/components/Monster.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/components/Shoot.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/main.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/systems/CameraSystem.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/systems/CollisionSystem.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/systems/DumbSystem.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/systems/LifeSystem.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/systems/MonsterSystem.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/systems/MovementSystem.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/server/sources/systems/TimerSystem.cpp">
+			<Option target="r-type_server"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testAvailableLobbiesDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testBinaryDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testConnectLobbyDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testConnectServerDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testCreateLobbyDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testEndGameDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testEnemyDeathDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testFetchLobbiesDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testInputDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testLeaveGameDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testLeaveLobbyDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testLobbyInfosDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testPlayerDeathDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testRequestStartGameDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testRtypeDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testSpawnEnemyDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testStartGameDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testTriggerBonusDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/tests/commons/network/datagram/testUpdateComponentDatagram.cpp">
+			<Option target="r-type_tests"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/lib/ecs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\ecs\"/>
+		</Unit>
+		<Unit filename="/home/Pywwo/rtype/cmake-build-debug/conanbuildinfo.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

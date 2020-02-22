@@ -1,0 +1,7 @@
+add_subdirectory(${PROJECT_SOURCE_DIR}/dynamic_libraries/movement_system)
+add_subdirectory(${PROJECT_SOURCE_DIR}/dynamic_libraries/camera_system)
+add_subdirectory(${PROJECT_SOURCE_DIR}/dynamic_libraries/timer_system)
+add_subdirectory(${PROJECT_SOURCE_DIR}/dynamic_libraries/life_system)
+add_subdirectory(${PROJECT_SOURCE_DIR}/dynamic_libraries/collision_system)
+add_subdirectory(${PROJECT_SOURCE_DIR}/dynamic_libraries/monster_system)
+add_subdirectory(${PROJECT_SOURCE_DIR}/dynamic_libraries/garbage_system)
